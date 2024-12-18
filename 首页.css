@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Nunito-Black";
+  src: url("font/Nunito-Black.ttf");
+}
+body {
+  background: url(images/背景图5.png) top center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 14px;
+}
+#box {
+  width: 100%;
+  min-height: calc(100% - 160px);
+  margin: 0 auto;
+  padding-top: 90px;
+  margin-top: 130px;
+}
+#boox {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 2%;
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 15px rgb(170, 168, 168);
+}
+.touxiang {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  margin-top: -50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgb(164, 159, 159);
+}
+.touxiang:hover {
+  transform: scale(1.1);
+}
+.rotate {
+  animation: rotateImg 10s linear;
+  animation-iteration-count: infinite;
+  transition: all 0.3s ease;
+}
+@keyframes rotateImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.name {
+  width: 75%;
+  height: 55px;
+  font-size: 37px;
+  line-height: 55px;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #93bedb;
+  font-family: Nunito-Black, sans-serif;
+}
+a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-family: Nunito-Black, sans-serif;
+}
+.lizhi {
+  font-size: 20px;
+  margin-top: 35px;
+  font-weight: bold;
+}

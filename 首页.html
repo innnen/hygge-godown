@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY BLOG</title>
+    <link href="首页.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="box">
+      <div id="boox">
+        <img class="touxiang" src="images/头像4.jpg" onclick="play()" />
+        <p class="name">Michi</p>
+        <p class="lizhi">做一个只记得快乐和知识点的人.</p>
+        <a href="了解我.html">Welcome to my blog!(click me)</a>
+      </div>
+      <div class="main_bottom">
+        <audio id="music" loop autoplay>
+          <source
+            src="music/In Love With a Ghost _ Nori - Flowers(feat_ Nori).ogg"
+          />
+        </audio>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var audio = document.getElementById("music");
+        audio.pause(); //打开页面时无音乐
+      };
+      function play() {
+        var audio = document.getElementById("music");
+        var img = document.querySelector(".touxiang");
+        if (audio.paused) {
+          audio.play();
+          img.classList.add("rotate");
+        } else {
+          audio.pause();
+          audio.currentTime = 0; //音乐从头播放
+          img.classList.remove("rotate");
+        }
+      }
+    </script>
+  </body>
+</html>

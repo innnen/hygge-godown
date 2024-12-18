@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Nunito-Black";
+  src: url("font/Nunito-Black.ttf");
+}
+li {
+  list-style-type: none;
+}
+body {
+  background: url(images/背景图5.png) top center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 14px;
+}
+/*头部*/
+.head {
+  width: 1100px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: 0; /*使用粘性定位时，必须至少要设置top、bottom、left、right中的一个属性*/
+}
+.nav {
+  width: 1100px;
+  height: 70px;
+  margin: auto;
+  background: rgb(247, 156, 182, 0.5);
+  padding-top: 10px;
+  position: relative;
+}
+.nav h1 {
+  color: #333;
+  font-size: 40px;
+  font-family: "Nunito-Black", Arial, sans-serif;
+  position: absolute;
+  top: 18px;
+  left: 50px;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  left: 300px;
+  top: 25px;
+}
+.nav ul li {
+  display: inline;
+  margin: 0 7px;
+}
+.nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-family: "SourGummy-Black", Arial, sans-serif;
+  font-size: 23px;
+  margin-left: 50px;
+  padding: 15px 5px;
+  font-weight: bold;
+}
+.nav ul li a:hover {
+  background-color: rgb(247, 156, 182);
+  border-radius: 30px;
+}
+.nav ul li a img {
+  width: 26px;
+  margin-right: 7px;
+}
+/*中间内容*/
+.main {
+  width: 1000px;
+  padding: 50px;
+  overflow: hidden;
+  margin: auto;
+  background-color: rgba(239, 237, 237, 0.5);
+}
+.main_left {
+  width: 230px;
+  height: auto;
+  float: left;
+  border-right: #121244 dotted 1px;
+  padding-right: 10px;
+}
+.main_left .pic {
+  width: 190px;
+  height: 190px;
+}
+.main_left .pic img {
+  width: 190px;
+  height: 190px;
+  display: block;
+  border-radius: 50%;
+}
+.name {
+  width: 190px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #333;
+  font-family: "Nunito-Black", Arial, sans-serif;
+  text-indent: 1.5em;
+  margin-top: 17px;
+}
+.left_nav {
+  width: 190px;
+  height: auto;
+  margin-top: 30px;
+}
+.left_nav li {
+  background: url(images/d1.png) left center no-repeat;
+  padding-left: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+/*留言*/
+.main_right {
+  width: 720px;
+  height: auto;
+  float: left;
+  margin-left: 38px;
+  margin-top: 20px;
+}
+.main_right h2 {
+  font-size: 27px;
+  color: #333;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.liuyan {
+  width: 500px;
+  margin: auto;
+}
+.liuyan p {
+  line-height: 30px;
+  overflow: hidden;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.liuyan p span {
+  display: block;
+  width: 100px;
+  text-align: right;
+  float: left;
+}
+.liuyan p input {
+  display: block;
+  width: 398px;
+  height: 30px;
+  border: none;
+  float: left;
+  border: #f79cb6 solid 1px;
+  border-radius: 10px;
+}
+.liuyan p textarea {
+  display: block;
+  width: 398px;
+  height: 200px;
+  border: none;
+  float: left;
+  border: #f79cb6 solid 1px;
+  border-radius: 10px;
+}
+.liuyan .btn {
+  display: block;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  float: left;
+  border: none;
+  background: #f79cb6;
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.liuyan .btn:hover {
+  background: #f79cb6;
+}
+/*底部*/
+.foot {
+  width: 1100px;
+  height: 75px;
+  margin: auto;
+  background: rgb(247, 156, 182,0.5);
+  clear: both;
+}
